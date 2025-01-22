@@ -17,7 +17,7 @@ class Base_Model():
         if sys.platform.startswith('win'):
             locale.setlocale(locale.LC_ALL, 'us')
         else:
-            locale.setlocale(locale.LC_ALL, 'en_US.utf8')
+            locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
         print('The price of %s was %s.' %
               (self, locale.currency(self.price)))
 
